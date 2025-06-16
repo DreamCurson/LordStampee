@@ -1,0 +1,84 @@
+.filtre {
+  background-color: var(--blanc);
+  padding: 1rem;
+  width: 200px;
+  border: 2px solid var(--bleu-basic-transparent);
+  border-radius: 20px;
+}
+
+.filtre__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  block-size: 100%;
+  color: #000;
+}
+
+.filtre__texte-gras {
+  font-family: var(--lusitana);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.filtre__formulaire {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.filtre__bloc label {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.filtre__bloc input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.filtre__bloc select {
+  padding: 4px;
+  background-color: var(--bleu-transparent);
+  border: none;
+  font-size: 0.95rem;
+}
+
+.filtre__annee-creation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="range"] {
+  flex: 1;
+  accent-color: var(--bleu-basic);
+}
+
+.filtre__bloc-annee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filtre__bouton {
+  display: flex;
+  justify-content: center;
+  background-color: var(--bleu-gris);
+  color: black;
+  padding: 5px 50px;
+  border-radius: 30px;
+  font-family: var(--lusitana);
+  font-weight: 700;
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+}
+
+.filtre__bouton:hover,
+.filtre__bouton:focus {
+  color: var(--blanc);
+  background-color: var(--bleu-basic);
+  outline: none;
+}

@@ -1,0 +1,9 @@
+.enchere-en-cours,
+.enchere-archivé {
+  display: none;
+  margin-bottom: 100px;
+}
+
+.enchere-visible {
+  display: block;
+}

@@ -1,0 +1,18 @@
+/* ----- Enchère navigation ----- */
+
+.navigation-enchere__elements {
+  display: grid;
+  grid-template-columns: repeat(2, 10rem);
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.lien-navigation {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.lien-navigation.actif {
+  font-weight: bold;
+}

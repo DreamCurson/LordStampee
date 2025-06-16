@@ -1,0 +1,135 @@
+.piedpage {
+  background-color: var(--bleu-pale);
+  padding: 20px;
+  font-family: var(--lusitana);
+}
+
+/* ----- Bloc Actualite et infolettre ----- */
+.piedpage__bloc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.piedpage__infolettre,
+.piedpage__actualite {
+  background-color: var(--blanc);
+  display: flex;
+  border: var(--bleu-basic) 2px solid;
+  border-radius: 15px;
+  padding: 10px 10px 10px 15px;
+  height: 150px;
+  gap: 20px;
+  align-items: center;
+}
+
+.piedpage__infolettre img,
+.piedpage__actualite img {
+  width: 40px;
+  height: 40px;
+}
+
+.piedpage__infolettre-contenu,
+.piedpage__actualite-contenu {
+  border-left: 2px solid var(--bleu-basic);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  flex-direction: column;
+  min-height: 100px;
+}
+
+.piedpage__infolettre-titre,
+.piedpage__actualite-titre {
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .piedpage__infolettre-titre,
+  .piedpage__actualite-titre {
+    font-size: 19px;
+  }
+}
+
+.piedpage__infolettre input {
+  padding: 8px;
+  border: 2px solid var(--bleu-basic);
+  border-radius: 4px;
+  width: 30ch;
+  box-sizing: border-box;
+  transition: ease-in-out 300ms;
+}
+
+.piedpage__infolettre input:hover {
+  border: #ccc 2px solid;
+}
+
+.piedpage__actualite {
+  padding-left: 15px;
+}
+
+.piedpage__actualite-bouton {
+  text-decoration: none;
+  padding: 10px;
+  width: 30ch;
+  background-color: var(--bleu-pale);
+  color: black;
+  border: var(--bleu-basic) 2px solid;
+  border-radius: 4px;
+  text-align: center;
+  transition: ease-in-out 300ms;
+}
+
+.piedpage__actualite-bouton:hover {
+  background-color: var(--bleu-basic);
+  color: var(--bleu-pale);
+}
+
+/* ----- Navigation Pied Page ----- */
+.piedpage__navigation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .piedpage__navigation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .piedpage__navigation {
+    grid-template-columns: 1fr;
+  }
+}
+
+.piedpage__elements-navigation {
+}
+
+.piedpage__element-titre a,
+.piedpage__element-titre {
+  font-weight: 700;
+  color: var(--bleu-fonce);
+  text-decoration: none;
+}
+
+.piedpage__element-titre a:hover {
+  text-decoration: underline;
+}
+
+.piedpage__element a {
+  text-decoration: none;
+  color: var(--bleu-basic);
+}
+
+.piedpage__element a:hover {
+  text-decoration: underline;
+}
+
+.piedpage__element-icon {
+  max-width: 40px;
+}

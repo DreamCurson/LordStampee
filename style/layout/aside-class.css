@@ -1,0 +1,11 @@
+.aside-class {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.aside-class__enchere {
+  display: flex;
+  flex-wrap: wrap;
+}
