@@ -6,6 +6,7 @@
 @import "composant/bloc-enchere.css";
 @import "composant/filtre.css";
 @import "composant/presentation-timbre.css";
+@import "composant/description-general.css";
 
 /* Composant utilisé avec le javascript */
 @import "composant/enchere.css";

@@ -2,16 +2,23 @@
   box-sizing: border-box;
 }
 
+.presentation-timbre__content {
+  display: flex;
+  gap: 10px;
+}
+
 .presentation-timbre__images {
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .presentation-timbre__image-principal {
-  display: flex;
+  height: auto;
+  max-width: 100%;
+  display: block;
 }
 
 .presentation-timbre__sous-images {
@@ -22,7 +29,7 @@
 }
 
 .presentation-timbre__image-secondaire {
-  max-width: 150px;
+  max-width: 90px;
   object-fit: cover;
   cursor: pointer;
   border-radius: 5px;

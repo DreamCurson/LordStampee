@@ -135,72 +135,96 @@
       </nav>
     </header>
 
-    <section class="presentation-timbre__images">
-      <div class="presentation-timbre__image-principal">
-        <img
-          id="myimage"
-          src="images/timbres/harleydavidson/harleydavidson1960.jpg"
-          width="600"
-          height="400"
-          alt="Main Image"
-        />
-      </div>
-      <div class="presentation-timbre__sous-images">
-        <img
-          src="images/timbres/harleydavidson/harleydavidson1960-1.jpg"
-          alt="Harley Davidson Image 1"
-          class="presentation-timbre__image-secondaire"
-        />
-        <img
-          src="images/timbres/harleydavidson/harleydavidson1960-2.jpg"
-          alt="Harley Davidson Image 2"
-          class="presentation-timbre__image-secondaire"
-        />
-        <img
-          src="images/timbres/harleydavidson/harleydavidson1960-collection.jpg"
-          alt="Harley Davidson Collection"
-          class="presentation-timbre__image-secondaire"
-        />
-        <!-- Navigation arrows placed next to the images -->
-        <div class="presentation-timbre__navigation">
-          <div class="presentation-timbre__navigation-button button--next">
-            &gt;
+    <section class="presentation-timbre">
+      <div class="presentation-timbre__content">
+        <div class="presentation-timbre__images">
+          <div class="presentation-timbre__image-principal-section">
+            <img
+              id="myimage"
+              class="presentation-timbre__image-principal"
+              src="images/timbres/harleydavidson/harleydavidson1960.jpg"
+              alt="Main Image"
+            />
           </div>
-          <div class="presentation-timbre__navigation-button button--prev">
-            &lt;
+          <div class="presentation-timbre__sous-images">
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-1.jpg"
+              alt="Harley Davidson Image 1"
+              class="presentation-timbre__image-secondaire"
+            />
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-2.jpg"
+              alt="Harley Davidson Image 2"
+              class="presentation-timbre__image-secondaire"
+            />
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-collection.jpg"
+              alt="Harley Davidson Collection"
+              class="presentation-timbre__image-secondaire"
+            />
+            <div class="presentation-timbre__navigation">
+              <div class="presentation-timbre__navigation-button button--next">
+                &gt;
+              </div>
+              <div class="presentation-timbre__navigation-button button--prev">
+                &lt;
+              </div>
+            </div>
           </div>
         </div>
+
+        <section>
+          <article class="description-general">
+            <div class="description-general__boite">
+              <h2 class="description-general__titre">Titre du timbre</h2>
+              <div class="description-general__elements">
+                <div class="description-general__prix__temps">
+                  <img
+                    src="images/signaleur/Signaleur-vert.svg"
+                    alt="Signaleur-vert"
+                    class="description-general__signaleur"
+                  />
+                  <p class="description-general__chrono">2 jour, 2 heures</p>
+                </div>
+                <p class="description-general__prix">58.00 $</p>
+              </div>
+              <p class="description-general__description">
+                Émis en 1982, ce timbre présente Nicolas Cage dans un portrait
+                singulier : les yeux fermés et un large sourire, capturant la
+                jeunesse et la spontanéité de l'acteur au début de sa carrière.
+                Le fond noir fait ressortir son visage, créant un contraste
+                puissant, presque mystérieux. Ce timbre joue subtilement sur
+                l’idée que, tout comme l’acteur, il est difficile de le cerner.
+                À l’époque, Cage commençait à se faire un nom, mais son talent
+                et son futur imprévisible étaient encore bien dissimulés
+                derrière ce sourire envoûtant. Un timbre simple, mais qui, comme
+                Cage, n’a pas peur de surprendre.
+              </p>
+              <img
+                class="description-general__coupcoeur"
+                src="images/coupdecoeur.png"
+                alt=""
+              />
+              <div class="miser">
+                <p class="miser__texte">Miser</p>
+                <label for="montant" class="visually-hidden"></label>
+                <input
+                  type="number"
+                  id="montant"
+                  name="montant"
+                  class="miser__input"
+                  min="0"
+                  step="0.01"
+                  placeholder="Montant en $"
+                />
+                <button class="miser__confirmer">Confirmer</button>
+              </div>
+            </div>
+          </article>
+          <article class="description-timbre"></article>
+        </section>
       </div>
     </section>
-
-    <article class="description-general">
-      <h2 class="description-general__titre">Titre du timbre</h2>
-      <div class="enchere-temps-prix">
-        <div class="enchere-temps-prix__temps">
-          <img src="" alt="" class="enchere-temps-prix__image" />
-          <p class="enchere-temps-chrono">2 jour, 2 heures</p>
-        </div>
-        <p class="enchere-temps-prix__prix">58.00 $</p>
-      </div>
-      <p class="description-general__description">
-        Émis en 1982, ce timbre présente Nicolas Cage dans un portrait singulier
-        : les yeux fermés et un large sourire, capturant la jeunesse et la
-        spontanéité de l'acteur au début de sa carrière. Le fond noir fait
-        ressortir son visage, créant un contraste puissant, presque mystérieux.
-        Ce timbre joue subtilement sur l’idée que, tout comme l’acteur, il est
-        difficile de le cerner. À l’époque, Cage commençait à se faire un nom,
-        mais son talent et son futur imprévisible étaient encore bien dissimulés
-        derrière ce sourire envoûtant. Un timbre simple, mais qui, comme Cage,
-        n’a pas peur de surprendre.
-      </p>
-      <div class="miser">
-        <p class="miser__texte"></p>
-
-        <button class="miser__confirmer"></button>
-      </div>
-    </article>
-
-    <article class="description-timbre"></article>
 
     <footer class="piedpage">
       <section class="piedpage__bloc">
