@@ -1,14 +1,11 @@
-/* ----- Navigation principal ----- */
-
 .navigation {
   font-family: var(--lusitana);
 }
 
 .navigation__top {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr 20fr 40fr;
   align-items: center;
-  gap: 4rem;
   padding: 1rem;
 }
 
@@ -16,78 +13,33 @@
   max-height: 60px;
   width: auto;
   transition: ease-in-out 300ms;
+  justify-self: start;
 }
-
-.navigation__logo:hover {
-}
-
-.navigation__principal {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation__element a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--bleu-fonce);
-}
-
-.navigation__element a:hover {
-  text-decoration: underline;
-  color: var(--bleu-basic);
-}
-
-/* ----- Navigation secondaire ----- */
-
-.navigation__secondaire {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-content: end;
-  gap: 1rem;
-  padding: 8px;
-  list-style: none;
-  margin: 0;
-  background-color: var(--bleu-basic-transparent);
-}
-
-.navigation__element-secondaire a {
-  text-decoration: none;
-  color: var(--bleu-fonce);
-}
-
-.navigation__element-secondaire a:hover {
-  text-decoration: underline;
-  color: var(--bleu-basic);
-}
-
-/* ----- Recherche ----- */
 
 .navigation__recherche {
   display: flex;
-  margin: 20px 0;
+  justify-self: center;
 }
 
 .navigation__recherche form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: auto;
+  justify-content: center;
   background-color: var(--bleu-pale);
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+  padding: 10px 35%;
 }
 
 .navigation__recherche_input {
-  padding: 7px 15px;
+  padding: 7px 30%;
   font-size: 1rem;
   border: 2px solid var(--bleu-basic);
   border-radius: 6px;
   outline: none;
   transition: border-color 0.3s ease;
+  margin-right: 10px;
 }
 
 .navigation__recherche_input:focus {
@@ -97,7 +49,6 @@
 
 .navigation__recherche-bouton {
   padding: 8px 10px;
-  margin-left: 10px;
   background-color: var(--bleu-basic);
   border: none;
   border-radius: 6px;
@@ -112,4 +63,39 @@
 
 .navigation__recherche-bouton:active {
   transform: scale(0.98);
+}
+
+.navigation__principal,
+.navigation__secondaire {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__principal {
+  display: flex;
+  gap: 3rem;
+  justify-self: end;
+}
+
+.navigation__secondaire {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: end;
+  gap: 5%;
+  padding: 8px 15px;
+  background-color: var(--bleu-basic-transparent);
+}
+
+.navigation__element a,
+.navigation__element-secondaire a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--bleu-fonce);
+}
+
+.navigation__element a:hover,
+.navigation__element-secondaire a:hover {
+  text-decoration: underline;
+  color: var(--bleu-basic);
 }

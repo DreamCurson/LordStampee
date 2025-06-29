@@ -1,10 +1,15 @@
-/* Utilisé avec le javascript */
-@import "base/enchere.css";
+/* Base */
+@import "base/button.css";
 
 /* Composant */
 @import "composant/navigation-enchere.css";
 @import "composant/bloc-enchere.css";
 @import "composant/filtre.css";
+@import "composant/presentation-timbre.css";
+
+/* Composant utilisé avec le javascript */
+@import "composant/enchere.css";
+@import "composant/img-magnifier-glass.css";
 
 /* Layout */
 @import "layout/aside-class.css";
@@ -14,4 +19,5 @@
 
 /* Font et variable */
 @import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import "variable/variable.css";

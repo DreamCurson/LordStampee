@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.presentation-timbre__images {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 600px;
+}
+
+.presentation-timbre__image-principal {
+  display: flex;
+}
+
+.presentation-timbre__sous-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.presentation-timbre__image-secondaire {
+  max-width: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.presentation-timbre__image-secondaire:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.presentation-timbre__navigation {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 10px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.presentation-timbre__navigation-button {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--lilita-one);
+  font-size: 21px;
+  font-weight: bold;
+  transition: ease-in-out 300ms;
+}

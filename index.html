@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lord Stampee - Timbre : Harley Davidson 1960...</title>
+    <link rel="stylesheet" href="style/main.css" />
+    <script type="module" src="script/page-timbre.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <div class="navigation__top">
+          <img src="images/logo-bleu.png" alt="Logo" class="navigation__logo" />
+
+          <section class="navigation__recherche">
+            <form action="recherche.html" method="get">
+              <label for="recherche"></label>
+              <input
+                id="recherche"
+                type="text"
+                placeholder="Trouvez votre futur timbre..."
+                name="query"
+                class="navigation__recherche_input"
+              />
+              <button type="submit" class="navigation__recherche-bouton">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20"
+                  height="15"
+                  viewBox="0 0 26 26"
+                  fill="white"
+                >
+                  <path
+                    d="M 10 0.1875 C 4.578125 0.1875 0.1875 4.578125 0.1875 10 C 0.1875 15.421875 4.578125 19.8125 10 19.8125 C 12.289063 19.8125 14.394531 19.003906 16.0625 17.6875 L 16.9375 18.5625 C 16.570313 19.253906 16.699219 20.136719 17.28125 20.71875 L 21.875 25.34375 C 22.589844 26.058594 23.753906 26.058594 24.46875 25.34375 L 25.34375 24.46875 C 26.058594 23.753906 26.058594 22.589844 25.34375 21.875 L 20.71875 17.28125 C 20.132813 16.695313 19.253906 16.59375 18.5625 16.96875 L 17.6875 16.09375 C 19.011719 14.421875 19.8125 12.300781 19.8125 10 C 19.8125 4.578125 15.421875 0.1875 10 0.1875 Z M 10 2 C 14.417969 2 18 5.582031 18 10 C 18 14.417969 14.417969 18 10 18 C 5.582031 18 2 14.417969 2 10 C 2 5.582031 5.582031 2 10 2 Z M 4.9375 7.46875 C 4.421875 8.304688 4.125 9.289063 4.125 10.34375 C 4.125 13.371094 6.566406 15.8125 9.59375 15.8125 C 10.761719 15.8125 11.859375 15.433594 12.75 14.8125 C 12.511719 14.839844 12.246094 14.84375 12 14.84375 C 8.085938 14.84375 4.9375 11.695313 4.9375 7.78125 C 4.9375 7.675781 4.933594 7.574219 4.9375 7.46875 Z"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </section>
+
+          <ul class="navigation__principal">
+            <li class="navigation__element">
+              <a href="catalogue.html">Enchères</a>
+            </li>
+            <li class="navigation__element"><a href="">Actualités</a></li>
+            <li class="navigation__element"><a href="">Devenir membre</a></li>
+            <li class="navigation__element"><a href="">Se connecter</a></li>
+          </ul>
+        </div>
+
+        <ul class="navigation__secondaire">
+          <li class="navigation__element-secondaire">
+            <a href="">À propos de Lord Reginald Stampee III</a>
+          </li>
+          <li class="navigation__element-secondaire">
+            <a href="">Termes & Conditions</a>
+          </li>
+          <li class="navigation__element-secondaire"><a href="">FAQ</a></li>
+          <li class="navigation__element-secondaire">
+            <a href="">Contactez-nous</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="presentation-timbre__images">
+      <div class="presentation-timbre__image-principal">
+        <img
+          id="myimage"
+          src="images/timbres/harleydavidson/harleydavidson1960.jpg"
+          width="600"
+          height="400"
+          alt="Main Image"
+        />
+      </div>
+      <div class="presentation-timbre__sous-images">
+        <img
+          src="images/timbres/harleydavidson/harleydavidson1960-1.jpg"
+          alt="Harley Davidson Image 1"
+          class="presentation-timbre__image-secondaire"
+        />
+        <img
+          src="images/timbres/harleydavidson/harleydavidson1960-2.jpg"
+          alt="Harley Davidson Image 2"
+          class="presentation-timbre__image-secondaire"
+        />
+        <img
+          src="images/timbres/harleydavidson/harleydavidson1960-collection.jpg"
+          alt="Harley Davidson Collection"
+          class="presentation-timbre__image-secondaire"
+        />
+        <!-- Navigation arrows placed next to the images -->
+        <div class="presentation-timbre__navigation">
+          <div class="presentation-timbre__navigation-button button--next">
+            &gt;
+          </div>
+          <div class="presentation-timbre__navigation-button button--prev">
+            &lt;
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article class="description-general">
+      <h2 class="description-general__titre">Titre du timbre</h2>
+      <div class="enchere-temps-prix">
+        <div class="enchere-temps-prix__temps">
+          <img src="" alt="" class="enchere-temps-prix__image" />
+          <p class="enchere-temps-chrono">2 jour, 2 heures</p>
+        </div>
+        <p class="enchere-temps-prix__prix">58.00 $</p>
+      </div>
+      <p class="description-general__description">
+        Émis en 1982, ce timbre présente Nicolas Cage dans un portrait singulier
+        : les yeux fermés et un large sourire, capturant la jeunesse et la
+        spontanéité de l'acteur au début de sa carrière. Le fond noir fait
+        ressortir son visage, créant un contraste puissant, presque mystérieux.
+        Ce timbre joue subtilement sur l’idée que, tout comme l’acteur, il est
+        difficile de le cerner. À l’époque, Cage commençait à se faire un nom,
+        mais son talent et son futur imprévisible étaient encore bien dissimulés
+        derrière ce sourire envoûtant. Un timbre simple, mais qui, comme Cage,
+        n’a pas peur de surprendre.
+      </p>
+      <div class="miser">
+        <p class="miser__texte"></p>
+
+        <button class="miser__confirmer"></button>
+      </div>
+    </article>
+
+    <article class="description-timbre"></article>
+
+    <footer class="piedpage">
+      <section class="piedpage__bloc">
+        <div class="piedpage__infolettre">
+          <img src="images/email.svg" alt="Icon Lettre" />
+          <div class="piedpage__infolettre-contenu">
+            <h3 class="piedpage__infolettre-titre">
+              Recevez nos nouveautés et conseils philatéliques.
+            </h3>
+            <label for="infolettre-email">S'inscrire à l'infolettre</label>
+            <input id="infolettre-email" type="text" />
+          </div>
+        </div>
+        <div class="piedpage__actualite">
+          <img src="images/news-paper.svg" alt="Icon Lettre" />
+          <div class="piedpage__actualite-contenu">
+            <h3 class="piedpage__actualite-titre">
+              Suivez les dernières nouvelles
+            </h3>
+            <a href="" class="piedpage__actualite-bouton">Actualités</a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="piedpage__navigation">
+        <ul class="piedpage__elements-navigation">
+          <li class="piedpage__element-titre"><a href="">Contactez-nous</a></li>
+          <li class="piedpage__element"><a href="">Angleterre</a></li>
+          <li class="piedpage__element"><a href="">Canada</a></li>
+          <li class="piedpage__element"><a href="">US</a></li>
+          <li class="piedpage__element"><a href="">Australie</a></li>
+        </ul>
+        <ul class="piedpage__elements-navigation">
+          <li class="piedpage__element-titre"><a href="">FAQs</a></li>
+          <li class="piedpage__element"><a href="">Aide «Profil»</a></li>
+          <li class="piedpage__element">
+            <a href="">Aide «Comment placer une offre»</a>
+          </li>
+          <li class="piedpage__element">
+            <a href="">Aide «Trouver l'enchère désirée»</a>
+          </li>
+          <li class="piedpage__element">
+            <a href="">Contacter le webmestre</a>
+          </li>
+        </ul>
+        <ul class="piedpage__elements-navigation">
+          <li class="piedpage__element-titre"><a href="">Informations</a></li>
+          <li class="piedpage__element">
+            <a href="">À propos de Lord Reginald Stampee III</a>
+          </li>
+          <li class="piedpage__element"><a href="">Termes & Conditions</a></li>
+        </ul>
+        <div class="piedpage__elements-navigation">
+          <p class="piedpage__element-titre">Suivez-nous</p>
+          <a href="#"
+            ><img
+              src="images/icons/instagram.png"
+              alt="Instagram logo"
+              class="piedpage__element-icon"
+          /></a>
+
+          <a href="#"
+            ><img
+              src="images/icons/facebook.png"
+              alt="Facebook logo"
+              class="piedpage__element-icon"
+          /></a>
+
+          <a href="#"
+            ><img
+              src="images/icons/tiktok.png"
+              alt="TikTok logo"
+              class="piedpage__element-icon"
+          /></a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.button--next {
+  color: var(--bleu-basic);
+  background-color: var(--bleu-pale-fond);
+}
+
+.button--prev {
+  color: var(--bleu-fleche-transparent);
+  background-color: var(--bleu-pale);
+}
+
+.button--next:hover {
+  background-color: var(--bleu-basic);
+  color: var(--bleu-pale-fond);
+  border: 3px solid var(--bleu-pale-fond);
+}
+
+.button--prev:hover {
+  cursor: not-allowed;
+}

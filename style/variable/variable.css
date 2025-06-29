@@ -3,9 +3,12 @@
   --bleu-basic: #003399;
   --bleu-basic-transparent: #0033993c;
   --bleu-gris: #cacaef61;
+  --bleu-pale-fond: #aabdec;
   --bleu-pale: #eeeff6;
+  --bleu-fleche-transparent: #5a6271ea;
   --bleu-transparent: #00339910;
   --blanc: #ffffff;
 
   --lusitana: "Lusitana", serif;
+  --lilita-one: "Lilita One", sans-serif;
 }
