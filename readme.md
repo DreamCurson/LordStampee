@@ -1,8 +1,8 @@
 ### Site d'enchère pour Lord Stampee
 
-## Étape 1 : Maquette 1 Catalogue d'enchères
+## Étape 2 : Maquette 2 
 
-Correction à faire : Visuelle filtre, adaptation mobile, retouche BEM
+Correction à faire : adaptation mobile
 
 ## Étape 2 : Maquette d'un timbre en focus
 
