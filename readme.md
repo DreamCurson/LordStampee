@@ -6,4 +6,4 @@ Correction à faire : adaptation mobile
 
 ## Étape 2 : Maquette d'un timbre en focus
 
-Lien de la page GitHub :
+Lien de la page GitHub : https://dreamcurson.github.io/LordStampee/
