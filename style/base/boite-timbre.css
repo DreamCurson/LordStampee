@@ -1,0 +1,16 @@
+.boite-timbre {
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px var(--bleu-pale);
+  max-height: 500px;
+}
+
+.boite-timbre__titre {
+  font-family: var(--lusitana);
+  color: var(--bleu-basic);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--bleu-basic);
+}

@@ -1,0 +1,49 @@
+.miser {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+}
+
+.miser__texte {
+  display: flex;
+  align-items: center;
+  font-family: var(--lusitana);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--bleu-basic);
+  gap: 5px;
+}
+
+.miser__confirmer {
+  background-color: var(--bleu-pale);
+  color: var(--bleu-basic);
+  border: 2px solid var(--bleu-basic-transparent);
+  border-radius: 6px;
+  font-family: var(--lusitana);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 3px 10px;
+  box-shadow: 0 2px 3px var(--bleu-fonce-transparent);
+}
+
+.miser__confirmer:hover {
+  background-color: #eeeff6;
+  box-shadow: inset 0 2px 3px var(--bleu-fonce-transparent);
+  outline: none;
+}
+
+.miser__input {
+  width: 90px;
+  padding: 5px;
+  border: 2px solid var(--bleu-basic);
+  border-radius: 6px;
+  color: var(--bleu-fonce);
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+}
+
+.miser__input:focus {
+  border-color: var(--bleu-fonce);
+  outline: none;
+}

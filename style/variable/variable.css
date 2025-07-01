@@ -1,5 +1,6 @@
 :root {
   --bleu-fonce: #001c53;
+  --bleu-fonce-transparent: #0025708c;
   --bleu-basic: #003399;
   --bleu-basic-transparent: #0033993c;
   --bleu-gris: #cacaef61;
@@ -8,7 +9,9 @@
   --bleu-fleche-transparent: #5a6271ea;
   --bleu-transparent: #00339910;
   --blanc: #ffffff;
+  --bleu-separateur: #0c00f430;
 
+  --javanese: "javanese-text", sans-serif;
   --lusitana: "Lusitana", serif;
   --lilita-one: "Lilita One", sans-serif;
 }

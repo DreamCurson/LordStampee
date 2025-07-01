@@ -1,0 +1,52 @@
+.description__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description__element {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.description__titre-element {
+  font-family: var(--lusitana);
+  font-size: 18px;
+}
+
+.description__valeur-element {
+  font-family: var(--javanese);
+}
+
+.description__bloc-couleur {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background-color: var(--bleu-pale);
+  border-radius: 5px;
+}
+
+.description__image-couleur {
+  max-width: 20px;
+}
+
+.description__offre {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.description__offre-titre {
+  font-family: var(--lusitana);
+  font-size: 19px;
+  border-bottom: 2px solid var(--bleu-separateur);
+}
+
+.description__offre-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

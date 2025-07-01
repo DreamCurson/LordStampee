@@ -85,58 +85,6 @@
   margin-bottom: 5px;
 }
 
-/* ----- Section Miser ----- */
-
-.bloc-enchere__miser-bloc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-}
-
-.bloc-enchere__miser {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--bleu-fonce);
-  font-size: 0.9rem;
-}
-
-.bloc-enchere__submit-btn {
-  background-color: var(--bleu-basic);
-  color: var(--blanc);
-  border: none;
-  border-radius: 10px;
-  font-family: var(--lusitana);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 7px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.bloc-enchere__submit-btn:hover,
-.bloc-enchere__submit-btn:focus {
-  background-color: var(--bleu-fonce);
-  outline: none;
-}
-
-.bloc-enchere__input {
-  width: 80px;
-  padding: 5px;
-  border: 2px solid var(--bleu-basic);
-  border-radius: 6px;
-  color: var(--bleu-fonce);
-  outline-offset: 2px;
-  transition: border-color 0.3s ease;
-}
-
-.bloc-enchere__input:focus {
-  border-color: var(--bleu-fonce);
-  outline: none;
-}
-
 /* ----- Section bouton voir l'enchère ----- */
 
 .bloc-enchere__lien {

@@ -1,10 +1,3 @@
-.description-general__boite {
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px;
-  box-shadow: 0 4px 8px var(--bleu-pale);
-}
-
 .description-general__titre {
   font-family: var(--lusitana);
   color: var(--bleu-basic);
@@ -51,49 +44,4 @@
 
 .description-general__coupcoeur {
   max-height: 25px;
-}
-
-.miser {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 12px;
-}
-
-.miser__texte {
-  font-size: 16px;
-  color: var(--bleu-basic);
-}
-
-.miser__confirmer {
-  background-color: var(--bleu-basic);
-  color: var(--blanc);
-  border: none;
-  border-radius: 10px;
-  font-family: var(--lusitana);
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 7px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.miser__confirmer:hover {
-  background-color: var(--bleu-fonce);
-  outline: none;
-}
-
-.miser__input {
-  width: 90px;
-  padding: 5px;
-  border: 2px solid var(--bleu-basic);
-  border-radius: 6px;
-  color: var(--bleu-fonce);
-  outline-offset: 2px;
-  transition: border-color 0.3s ease;
-}
-
-.miser__input:focus {
-  border-color: var(--bleu-fonce);
-  outline: none;
 }

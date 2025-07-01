@@ -175,8 +175,10 @@
 
         <section>
           <article class="description-general">
-            <div class="description-general__boite">
-              <h2 class="description-general__titre">Titre du timbre</h2>
+            <div class="description-general__boite boite-timbre">
+              <h2 class="description-general__titre boite-timbre__titre">
+                Harley Davidson Timbre 1960
+              </h2>
               <div class="description-general__elements">
                 <div class="description-general__prix__temps">
                   <img
@@ -184,21 +186,22 @@
                     alt="Signaleur-vert"
                     class="description-general__signaleur"
                   />
-                  <p class="description-general__chrono">2 jour, 2 heures</p>
+                  <p class="description-general__chrono">2 jour, 3 heures</p>
                 </div>
-                <p class="description-general__prix">58.00 $</p>
+                <p class="description-general__prix">75.50 $</p>
               </div>
               <p class="description-general__description">
-                Émis en 1982, ce timbre présente Nicolas Cage dans un portrait
-                singulier : les yeux fermés et un large sourire, capturant la
-                jeunesse et la spontanéité de l'acteur au début de sa carrière.
-                Le fond noir fait ressortir son visage, créant un contraste
-                puissant, presque mystérieux. Ce timbre joue subtilement sur
-                l’idée que, tout comme l’acteur, il est difficile de le cerner.
-                À l’époque, Cage commençait à se faire un nom, mais son talent
-                et son futur imprévisible étaient encore bien dissimulés
-                derrière ce sourire envoûtant. Un timbre simple, mais qui, comme
-                Cage, n’a pas peur de surprendre.
+                Émis en 1960, ce timbre met en scène une moto Harley Davidson
+                emblématique, capturant l’esprit de liberté et de puissance qui
+                caractérise la légendaire marque américaine. Sur fond sobre, la
+                silhouette musclée de la moto se détache avec élégance, évoquant
+                la route, l’aventure et une époque où l’Amérique vibrait au son
+                des moteurs. Il s’agit du premier timbre d’une série de quatre,
+                chacun rendant hommage à un modèle iconique. Ce timbre incarne à
+                lui seul une culture, un style de vie, et une mécanique de
+                précision devenue mythe. À la fois sobre et percutant, il
+                s’adresse aux collectionneurs autant qu’aux passionnés de
+                deux-roues.
               </p>
               <img
                 class="description-general__coupcoeur"
@@ -213,15 +216,127 @@
                   id="montant"
                   name="montant"
                   class="miser__input"
-                  min="0"
-                  step="0.01"
-                  placeholder="Montant en $"
+                  type="number"
+                  min="75.50"
+                  step="0.50"
+                  value="75.50"
                 />
                 <button class="miser__confirmer">Confirmer</button>
               </div>
             </div>
           </article>
-          <article class="description-timbre"></article>
+
+          <details class="description boite-timbre">
+            <summary class="description__titre boite-timbre__titre">
+              Information du timbre
+            </summary>
+            <div class="description__elements">
+              <div class="description__element">
+                <h3 class="description__titre-element">Date de création :</h3>
+                <p class="description__valeur-element">1960</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Pays d'origine :</h3>
+                <p class="description__valeur-element">États-Unis</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Condition :</h3>
+                <p class="description__valeur-element">Excellente</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Dimension :</h3>
+                <p class="description__valeur-element">12mm x 15mm</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Certifié :</h3>
+                <p class="description__valeur-element">Oui</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Couleurs :</h3>
+                <div class="description__bloc-couleur">
+                  <img
+                    src="images/couleurs/couleur-noir.svg"
+                    alt=""
+                    class="description__image-couleur"
+                  />
+                  <p class="description__valeur-element">Noir</p>
+                </div>
+                <div class="description__bloc-couleur">
+                  <img
+                    src="images/couleurs/couleur-jaune.svg"
+                    alt=""
+                    class="description__image-couleur"
+                  />
+                  <p class="description__valeur-element">Jaune</p>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="description boite-timbre">
+            <summary class="description__titre boite-timbre__titre">
+              Information de l'enchère
+            </summary>
+            <div class="description__elements">
+              <div class="description__offre">
+                <h3 class="description__offre-titre">Offre actuelle :</h3>
+                <div class="description__offre-elements">
+                  <div class="description__element">
+                    <h3 class="description__titre-element">Mise :</h3>
+                    <p class="description__valeur-element bleu-gras">75.49$</p>
+                  </div>
+                  <div class="description__element">
+                    <h3 class="description__titre-element">Utilisateur :</h3>
+                    <p class="description__valeur-element bleu-gras">
+                      Nom User
+                    </p>
+                  </div>
+                </div>
+                <div class="description__offre-elements">
+                  <div class="description__element">
+                    <h3 class="description__titre-element">
+                      Ouverture de l'enchère :
+                    </h3>
+                    <p class="description__valeur-element bleu-gras">
+                      1 juillet 2025
+                    </p>
+                  </div>
+                  <div class="description__element">
+                    <h3 class="description__titre-element">
+                      Fermeture de l'enchère :
+                    </h3>
+                    <p class="description__valeur-element bleu-gras">
+                      3 juillet 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="description__element">
+                <h3 class="description__titre-element">Prix plancher :</h3>
+                <p class="description__valeur-element">20.00 $</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Nombre de mise :</h3>
+                <p class="description__valeur-element">4</p>
+              </div>
+              <div class="miser">
+                <p class="miser__texte">Miser</p>
+                <label for="montant" class="visually-hidden"></label>
+                <input
+                  type="number"
+                  id="montant"
+                  name="montant"
+                  class="miser__input"
+                  type="number"
+                  min="75.50"
+                  step="0.50"
+                  value="75.50"
+                />
+                <button class="miser__confirmer">Confirmer</button>
+              </div>
+            </div>
+          </details>
         </section>
       </div>
     </section>

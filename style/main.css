@@ -1,5 +1,8 @@
 /* Base */
 @import "base/button.css";
+@import "base/miser.css";
+@import "base/boite-timbre.css";
+@import "base/texte.css";
 
 /* Composant */
 @import "composant/navigation-enchere.css";
@@ -7,6 +10,7 @@
 @import "composant/filtre.css";
 @import "composant/presentation-timbre.css";
 @import "composant/description-general.css";
+@import "composant/description.css";
 
 /* Composant utilisé avec le javascript */
 @import "composant/enchere.css";
