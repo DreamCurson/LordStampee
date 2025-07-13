@@ -4,4 +4,4 @@
 
 Correction à faire : Meilleur adaptation mobile du pied de page, meilleur espacement, page timbre pas entièrement responsive..
 
-Lien de la page GitHub : https://dreamcurson.github.io/LordStampee/
+Lien de la page GitHub : [https://dreamcurson.github.io/LordStampee/](https://dreamcurson.github.io/LordStampee/)
