@@ -7,7 +7,7 @@
 /* ----- Bloc Actualite et infolettre ----- */
 .piedpage__bloc {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(500px, 0.5fr));
   gap: 20px;
   width: 100%;
   margin-bottom: 20px;
@@ -50,7 +50,7 @@
 @media (max-width: 800px) {
   .piedpage__infolettre-titre,
   .piedpage__actualite-titre {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
@@ -107,7 +107,8 @@
   }
 }
 
-.piedpage__elements-navigation {
+.piedpage__element-titre {
+  margin-bottom: 8px;
 }
 
 .piedpage__element-titre a,
@@ -119,6 +120,10 @@
 
 .piedpage__element-titre a:hover {
   text-decoration: underline;
+}
+
+.piedpage__element {
+  margin-bottom: 5px;
 }
 
 .piedpage__element a {

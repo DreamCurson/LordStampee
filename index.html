@@ -12,18 +12,29 @@
       <nav class="navigation">
         <div class="navigation__top">
           <img src="images/logo-bleu.png" alt="Logo" class="navigation__logo" />
+
+          <button class="navigation__burger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
           <div class="navigation__elements">
-            <section class="navigation__recherche">
+            <div class="navigation__recherche">
               <form action="recherche.html" method="get">
-                <label for="recherche"></label>
                 <input
                   id="recherche"
                   type="text"
                   placeholder="Trouvez votre futur timbre..."
                   name="query"
                   class="navigation__recherche_input"
+                  aria-label="Champ de recherche"
                 />
-                <button type="submit" class="navigation__recherche-bouton">
+                <button
+                  type="submit"
+                  class="navigation__recherche-bouton"
+                  aria-label="Search"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -39,7 +50,8 @@
                   </svg>
                 </button>
               </form>
-            </section>
+            </div>
+
             <ul class="navigation__principal">
               <li class="navigation__element">
                 <a href="catalogue.html">Enchères</a>
@@ -76,6 +88,7 @@
             </ul>
           </div>
         </div>
+
         <ul class="navigation__secondaire">
           <li
             class="navigation__element navigation__element--has-subcategories"
@@ -96,19 +109,19 @@
           <li
             class="navigation__element navigation__element--has-subcategories"
           >
-            <a href="#">Fonctionnement de la plateforme </a>
+            <a href="#">Fonctionnement de la plateforme</a>
             <ul class="navigation__subcategories">
               <li class="navigation__subcategory">
-                <a href="#">Aide « Profil »</a>
+                <a href="#">« Profil »</a>
               </li>
               <li class="navigation__subcategory">
-                <a href="#">Aide « Comment placer une offre »</a>
+                <a href="#">« Comment placer une offre »</a>
               </li>
               <li class="navigation__subcategory">
-                <a href="#">Aide « Suivre une enchère »</a>
+                <a href="#">« Suivre une enchère »</a>
               </li>
               <li class="navigation__subcategory">
-                <a href="#">Aide « Trouver l’enchère désirée »</a>
+                <a href="#">« Trouver l’enchère désirée »</a>
               </li>
               <li class="navigation__subcategory">
                 <a href="#">Contacter le webmestre</a>
@@ -135,7 +148,7 @@
       </nav>
     </header>
 
-    <section class="presentation-timbre">
+    <div class="presentation-timbre">
       <div class="presentation-timbre__content">
         <div class="presentation-timbre__images">
           <div class="presentation-timbre__image-principal-section">
@@ -209,14 +222,12 @@
                 alt=""
               />
               <div class="miser">
-                <p class="miser__texte">Miser</p>
-                <label for="montant" class="visually-hidden"></label>
+                <label for="montant-general" class="miser__texte">Miser</label>
                 <input
                   type="number"
-                  id="montant"
-                  name="montant"
+                  id="montant-general"
+                  name="montant-general"
                   class="miser__input"
-                  type="number"
                   min="75.50"
                   step="0.50"
                   value="75.50"
@@ -321,14 +332,14 @@
                 <p class="description__valeur-element">4</p>
               </div>
               <div class="miser">
-                <p class="miser__texte">Miser</p>
-                <label for="montant" class="visually-hidden"></label>
+                <label for="montant-secondaire" class="miser__texte"
+                  >Miser</label
+                >
                 <input
                   type="number"
-                  id="montant"
-                  name="montant"
+                  id="montant-secondaire"
+                  name="montant-secondaire"
                   class="miser__input"
-                  type="number"
                   min="75.50"
                   step="0.50"
                   value="75.50"
@@ -339,7 +350,7 @@
           </details>
         </section>
       </div>
-    </section>
+    </div>
 
     <footer class="piedpage">
       <section class="piedpage__bloc">

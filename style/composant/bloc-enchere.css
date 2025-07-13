@@ -44,6 +44,9 @@
   margin-bottom: 10px;
 }
 
+.bloc-enchere__temps-restant img {
+  max-width: 15px;
+}
 /* ----- Élements dans le bloc ----- */
 
 .bloc-enchere__bloc {
