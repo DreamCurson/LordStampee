@@ -11,6 +11,7 @@
 @import "composant/presentation-timbre.css";
 @import "composant/description-general.css";
 @import "composant/description.css";
+@import "composant/badge-banner.css";
 
 /* Composant utilisé avec le javascript */
 @import "composant/enchere.css";

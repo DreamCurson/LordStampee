@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lord Stampee</title>
+    <title>Lord Stampee - Timbre : Harley Davidson 1960...</title>
     <link rel="stylesheet" href="style/main.css" />
-    <script type="module" src="script/page-encheres.js"></script>
+    <script type="module" src="script/page-timbre.js"></script>
   </head>
   <body>
     <header>
@@ -65,7 +65,7 @@
                     <a href="#">Timbres</a>
                   </li>
                   <li class="navigation__subcategory">
-                    <a href="#">Enchères</a>
+                    <a href="index.html">Enchères</a>
                   </li>
                   <li class="navigation__subcategory">
                     <a href="#">Bridge</a>
@@ -148,257 +148,209 @@
       </nav>
     </header>
 
-    <div class="navigation-enchere">
-      <nav class="navigation-enchere__bloc">
-        <ul class="navigation-enchere__elements">
-          <li class="navigation-enchere__element">
-            <a href="#" class="lien-navigation actif">Enchères en cours</a>
-          </li>
-          <li class="navigation-enchere__element">
-            <a href="#" class="lien-navigation">Enchères archivées</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <section class="filtre">
-      <div class="filtre__bloc">
-        <h2>Filtres</h2>
-        <form class="filtre__formulaire">
-          <div class="filtre__section">
-            <label for="pays" class="filtre__texte-gras">Pays d'origine</label>
-            <select id="pays" name="pays">
-              <option value="all">Tous les pays</option>
-              <option value="afrique">Afrique du Sud</option>
-              <option value="allemagne">Allemagne</option>
-              <option value="argentine">Argentine</option>
-              <option value="belgique">Belgique</option>
-              <option value="bresil">Brésil</option>
-              <option value="canada">Canada</option>
-              <option value="chine">Chine</option>
-              <option value="espagne">Espagne</option>
-              <option value="usa">États-Unis</option>
-            </select>
-          </div>
-
-          <div class="filtre__section">
-            <label for="condition" class="filtre__texte-gras">Condition</label>
-            <select id="condition" name="condition">
-              <option value="parfaite">Parfaite</option>
-              <option value="excellente">Excellente</option>
-              <option value="bonne">Bonne</option>
-              <option value="moyenne">Moyenne</option>
-              <option value="endommage">Endommagé</option>
-              <option value="non-specifie">Non spécifié</option>
-            </select>
-          </div>
-
-          <div class="filtre__section">
-            <label for="certifie" class="filtre__texte-gras">Certifié ?</label>
-            <select id="certifie" name="certifie">
-              <option value="oui">Oui</option>
-              <option value="non">Non</option>
-            </select>
-          </div>
-
-          <div class="filtre__section">
-            <label for="couleur" class="filtre__texte-gras">Couleur(s)</label>
-            <select id="couleur" name="couleur">
-              <option value="rouge">Rouge</option>
-              <option value="bleu">Bleu</option>
-              <option value="vert">Vert</option>
-              <option value="jaune">Jaune</option>
-              <option value="noir">Noir</option>
-            </select>
-          </div>
-
-          <div class="filtre__section">
-            <label for="dateCreation" class="filtre__texte-gras"
-              >Date de création</label
-            >
-            <div class="filtre__bloc-annee">
-              <div class="filtre__annee-creation">
-                <span>1880</span>
-                <input
-                  type="range"
-                  min="1880"
-                  max="2025"
-                  value="2015"
-                  id="dateCreation"
-                />
-                <span>2025</span>
-              </div>
-              <p id="valeur-annee">2015</p>
-            </div>
-          </div>
-        </form>
-        <button class="filtre__bouton">Recherchez</button>
-      </div>
-    </section>
-
-    <section class="enchere-en-cours">
-      <div class="bloc-enchere">
-        <h2 class="bloc-enchere__titre">Enchère Vedette</h2>
-        <div class="bloc-enchere__encheres">
-          <article class="bloc-enchere__bloc">
+    <div class="presentation-timbre">
+      <div class="presentation-timbre__content">
+        <div class="presentation-timbre__images">
+          <div class="presentation-timbre__image-principal-section">
             <img
-              src="images/timbres/Timbre-Nico.webp"
-              alt="Nicolas Cage Timbre 1982"
-              class="bloc-enchere__image"
-            />
-            <div class="bloc-enchere__temps-restant">
-              <img
-                src="images/signaleur/Signaleur-vert.svg"
-                alt="signal vert"
-              />
-              <p class="bloc-enchere__texte-temps">Temps restant : 1j 4h</p>
-            </div>
-            <h3 class="bloc-enchere__sous-titre">
-              Nicolas Cage premium 1982 Teen Movie
-            </h3>
-            <div class="bloc-enchere__textes">
-              <p class="bloc-enchere__texte">
-                Timbre montrant Nicolas Cage dans toute sa splendeur avec le
-                soleil au visage. Collection limitée.
-              </p>
-              <p class="bloc-enchere__texte">Prix actuel : 58.00$</p>
-              <div class="miser">
-                <span class="miser__texte">
-                  <label for="miser1">Miser :</label>
-                  <input
-                    type="number"
-                    id="miser1"
-                    min="58"
-                    step="0.50"
-                    value="58.00"
-                    class="miser__input"
-                  />
-                </span>
-                <button type="button" class="miser__confirmer">
-                  Soumettre
-                </button>
-              </div>
-            </div>
-            <a href="#" class="bloc-enchere__lien">Voir l’enchère</a>
-          </article>
-
-          <article class="bloc-enchere__bloc">
-            <img
+              id="myimage"
+              class="presentation-timbre__image-principal"
               src="images/timbres/harleydavidson/harleydavidson1960.jpg"
-              alt="Harley Davidson Timbre 1985"
-              class="bloc-enchere__image"
+              alt="Main Image"
             />
-            <div class="bloc-enchere__temps-restant">
-              <img
-                src="images/signaleur/Signaleur-vert.svg"
-                alt="signal vert"
-              />
-              <p class="bloc-enchere__texte-temps">Temps restant : 2j 3h</p>
-            </div>
-            <h3 class="bloc-enchere__sous-titre">
-              Harley Davidson Timbre 1960
-            </h3>
-            <div class="bloc-enchere__textes">
-              <p class="bloc-enchere__texte">
-                Un timbre rare représentant une moto Harley Davidson de 1960,
-                une véritable légende de la route.
-              </p>
-              <p class="bloc-enchere__texte">Prix actuel : 75.50$</p>
-              <div class="miser">
-                <span class="miser__texte">
-                  <label for="miser2">Miser :</label>
-                  <input
-                    type="number"
-                    id="miser2"
-                    min="58"
-                    step="0.50"
-                    value="58.00"
-                    class="miser__input"
-                  />
-                </span>
-                <button type="button" class="miser__confirmer">
-                  Soumettre
-                </button>
+          </div>
+          <div class="presentation-timbre__sous-images">
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-1.jpg"
+              alt="Harley Davidson Image 1"
+              class="presentation-timbre__image-secondaire"
+            />
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-2.jpg"
+              alt="Harley Davidson Image 2"
+              class="presentation-timbre__image-secondaire"
+            />
+            <img
+              src="images/timbres/harleydavidson/harleydavidson1960-collection.jpg"
+              alt="Harley Davidson Collection"
+              class="presentation-timbre__image-secondaire"
+            />
+            <div class="presentation-timbre__navigation">
+              <div class="presentation-timbre__navigation-button button--next">
+                &gt;
+              </div>
+              <div class="presentation-timbre__navigation-button button--prev">
+                &lt;
               </div>
             </div>
-            <a href="index.html" class="bloc-enchere__lien">Voir l’enchère</a>
-          </article>
+          </div>
+        </div>
 
-          <article class="bloc-enchere__bloc">
-            <img
-              src="images/timbres/timbrecinema-lot4.jpg"
-              alt="Timbre du Cinéma 1990"
-              class="bloc-enchere__image"
-            />
-            <div class="bloc-enchere__temps-restant">
-              <img
-                src="images/signaleur/signaleur-orange.svg"
-                alt="signal orange"
-              />
-              <p class="bloc-enchere__texte-temps">Temps restant : 45m 20s</p>
-            </div>
-            <h3 class="bloc-enchere__sous-titre">Timbre du Cinéma 1990</h3>
-            <div class="bloc-enchere__textes">
-              <p class="bloc-enchere__texte">
-                Un timbre de collection mettant en avant des affiches de films
-                classiques des années 90.
-              </p>
-              <p class="bloc-enchere__texte">Prix actuel : 45.00$</p>
-              <div class="miser">
-                <span class="miser__texte">
-                  <label for="miser3">Miser :</label>
-                  <input
-                    type="number"
-                    id="miser3"
-                    min="58"
-                    step="0.50"
-                    value="58.00"
-                    class="miser__input"
+        <section>
+          <article class="description-general">
+            <div class="description-general__boite boite-timbre">
+              <h2 class="description-general__titre boite-timbre__titre">
+                Harley Davidson Timbre 1960
+              </h2>
+              <div class="description-general__elements">
+                <div class="description-general__prix__temps">
+                  <img
+                    src="images/signaleur/Signaleur-vert.svg"
+                    alt="Signaleur-vert"
+                    class="description-general__signaleur"
                   />
-                </span>
-                <button type="button" class="miser__confirmer">
-                  Soumettre
-                </button>
+                  <p class="description-general__chrono">2 jour, 3 heures</p>
+                </div>
+                <p class="description-general__prix">75.50 $</p>
+              </div>
+              <p class="description-general__description">
+                Émis en 1960, ce timbre met en scène une moto Harley Davidson
+                emblématique, capturant l’esprit de liberté et de puissance qui
+                caractérise la légendaire marque américaine. Sur fond sobre, la
+                silhouette musclée de la moto se détache avec élégance, évoquant
+                la route, l’aventure et une époque où l’Amérique vibrait au son
+                des moteurs. Il s’agit du premier timbre d’une série de quatre,
+                chacun rendant hommage à un modèle iconique. Ce timbre incarne à
+                lui seul une culture, un style de vie, et une mécanique de
+                précision devenue mythe. À la fois sobre et percutant, il
+                s’adresse aux collectionneurs autant qu’aux passionnés de
+                deux-roues.
+              </p>
+              <img
+                class="description-general__coupcoeur"
+                src="images/coupdecoeur.png"
+                alt=""
+              />
+              <div class="miser">
+                <label for="montant-general" class="miser__texte">Miser</label>
+                <input
+                  type="number"
+                  id="montant-general"
+                  name="montant-general"
+                  class="miser__input"
+                  min="75.50"
+                  step="0.50"
+                  value="75.50"
+                />
+                <button class="miser__confirmer">Confirmer</button>
               </div>
             </div>
-            <a href="#" class="bloc-enchere__lien">Voir l’enchère</a>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="enchere-archivé">
-      <div class="bloc-enchere">
-        <h2 class="bloc-enchere__titre">Enchères archivées</h2>
-        <div class="bloc-enchere__encheres">
-          <article class="bloc-enchere__bloc">
-            <img
-              src="images/timbres/timbrecinema-lot4.jpg"
-              alt="Timbre du Cinéma 1990"
-              class="bloc-enchere__image"
-            />
-            <div class="bloc-enchere__temps-restant">
-              <img
-                src="images/signaleur/signaleur-rouge.svg"
-                alt="signal rouge"
-              />
-              <p class="bloc-enchere__texte-temps">
-                Enchère terminé le 2 juin 2025
-              </p>
+          <details class="description boite-timbre">
+            <summary class="description__titre boite-timbre__titre">
+              Information du timbre
+            </summary>
+            <div class="description__elements">
+              <div class="description__element">
+                <h3 class="description__titre-element">Date de création :</h3>
+                <p class="description__valeur-element">1960</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Pays d'origine :</h3>
+                <p class="description__valeur-element">États-Unis</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Condition :</h3>
+                <p class="description__valeur-element">Excellente</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Dimension :</h3>
+                <p class="description__valeur-element">12mm x 15mm</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Certifié :</h3>
+                <p class="description__valeur-element">Oui</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Couleurs :</h3>
+                <div class="description__bloc-couleur">
+                  <img
+                    src="images/couleurs/couleur-noir.svg"
+                    alt=""
+                    class="description__image-couleur"
+                  />
+                  <p class="description__valeur-element">Noir</p>
+                </div>
+                <div class="description__bloc-couleur">
+                  <img
+                    src="images/couleurs/couleur-jaune.svg"
+                    alt=""
+                    class="description__image-couleur"
+                  />
+                  <p class="description__valeur-element">Jaune</p>
+                </div>
+              </div>
             </div>
-            <h3 class="bloc-enchere__sous-titre">Timbre du Cinéma 1990</h3>
-            <div class="bloc-enchere__textes">
-              <p class="bloc-enchere__texte">
-                Un timbre de collection mettant en avant des affiches de films
-                classiques des années 90.
-              </p>
-              <p class="bloc-enchere__texte">Prix final de vente : 45.00$</p>
+          </details>
+
+          <details class="description boite-timbre">
+            <summary class="description__titre boite-timbre__titre">
+              Information de l'enchère
+            </summary>
+            <div class="description__elements">
+              <div class="description__offre">
+                <h3 class="description__offre-titre">Offre actuelle :</h3>
+                <div class="description__offre-elements">
+                  <div class="description__element">
+                    <h3 class="description__titre-element">Mise :</h3>
+                    <p class="description__valeur-element bleu-gras">75.49$</p>
+                  </div>
+                  <div class="description__element">
+                    <h3 class="description__titre-element">Utilisateur :</h3>
+                    <p class="description__valeur-element bleu-gras">
+                      Nom User
+                    </p>
+                  </div>
+                </div>
+                <div class="description__offre-elements">
+                  <div class="description__element">
+                    <h3 class="description__titre-element">
+                      Ouverture de l'enchère :
+                    </h3>
+                    <p class="description__valeur-element bleu-gras">
+                      1 juillet 2025
+                    </p>
+                  </div>
+                  <div class="description__element">
+                    <h3 class="description__titre-element">
+                      Fermeture de l'enchère :
+                    </h3>
+                    <p class="description__valeur-element bleu-gras">
+                      3 juillet 2025
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="description__element">
+                <h3 class="description__titre-element">Prix plancher :</h3>
+                <p class="description__valeur-element">20.00 $</p>
+              </div>
+              <div class="description__element">
+                <h3 class="description__titre-element">Nombre de mise :</h3>
+                <p class="description__valeur-element">4</p>
+              </div>
+              <div class="miser">
+                <label for="montant-secondaire" class="miser__texte"
+                  >Miser</label
+                >
+                <input
+                  type="number"
+                  id="montant-secondaire"
+                  name="montant-secondaire"
+                  class="miser__input"
+                  min="75.50"
+                  step="0.50"
+                  value="75.50"
+                />
+                <button class="miser__confirmer">Confirmer</button>
+              </div>
             </div>
-            <a href="#" class="bloc-enchere__lien">Voir l’enchère</a>
-          </article>
-        </div>
+          </details>
+        </section>
       </div>
-    </section>
+    </div>
 
     <footer class="piedpage">
       <section class="piedpage__bloc">

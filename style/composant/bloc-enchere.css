@@ -51,6 +51,7 @@
 
 .bloc-enchere__bloc {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   max-width: 320px;
